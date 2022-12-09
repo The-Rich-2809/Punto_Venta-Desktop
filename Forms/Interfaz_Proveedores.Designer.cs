@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Dgv_Proveedores = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Agregar_Mod = new System.Windows.Forms.GroupBox();
             this.CmbDiaVisita = new CustomControls.RJControls.RJComboBox();
             this.CmbDiaEntrega = new CustomControls.RJControls.RJComboBox();
@@ -52,26 +54,11 @@
             this.Agregar = new CustomControls.RJControls.RJButton();
             this.Actualizar = new CustomControls.RJControls.RJButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Proveedores)).BeginInit();
+            this.Dgv_Proveedores = new System.Windows.Forms.DataGridView();
             this.Agregar_Mod.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Proveedores)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Dgv_Proveedores
-            // 
-            this.Dgv_Proveedores.AllowUserToAddRows = false;
-            this.Dgv_Proveedores.AllowUserToDeleteRows = false;
-            this.Dgv_Proveedores.AllowUserToResizeRows = false;
-            this.Dgv_Proveedores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Dgv_Proveedores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.Dgv_Proveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_Proveedores.Location = new System.Drawing.Point(12, 12);
-            this.Dgv_Proveedores.Name = "Dgv_Proveedores";
-            this.Dgv_Proveedores.RowHeadersWidth = 62;
-            this.Dgv_Proveedores.RowTemplate.Height = 28;
-            this.Dgv_Proveedores.Size = new System.Drawing.Size(1965, 309);
-            this.Dgv_Proveedores.TabIndex = 12;
             // 
             // Agregar_Mod
             // 
@@ -454,32 +441,69 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // Dgv_Proveedores
+            // 
+            this.Dgv_Proveedores.AllowUserToAddRows = false;
+            this.Dgv_Proveedores.AllowUserToDeleteRows = false;
+            this.Dgv_Proveedores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Dgv_Proveedores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Dgv_Proveedores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_Proveedores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.Dgv_Proveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Proveedores.EnableHeadersVisualStyles = false;
+            this.Dgv_Proveedores.Location = new System.Drawing.Point(12, 12);
+            this.Dgv_Proveedores.Name = "Dgv_Proveedores";
+            this.Dgv_Proveedores.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_Proveedores.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Dgv_Proveedores.RowHeadersWidth = 62;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(154)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.Dgv_Proveedores.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.Dgv_Proveedores.RowTemplate.Height = 28;
+            this.Dgv_Proveedores.Size = new System.Drawing.Size(1965, 309);
+            this.Dgv_Proveedores.TabIndex = 22;
+            // 
             // Interfaz_Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1989, 876);
+            this.Controls.Add(this.Dgv_Proveedores);
             this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.Modificar);
             this.Controls.Add(this.Agregar);
             this.Controls.Add(this.Actualizar);
             this.Controls.Add(this.Agregar_Mod);
-            this.Controls.Add(this.Dgv_Proveedores);
             this.Name = "Interfaz_Proveedores";
             this.Text = "Interfaz_Proveedores";
             this.Load += new System.EventHandler(this.Interfaz_Proveedores_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Proveedores)).EndInit();
             this.Agregar_Mod.ResumeLayout(false);
             this.Agregar_Mod.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Proveedores)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView Dgv_Proveedores;
         private System.Windows.Forms.GroupBox Agregar_Mod;
         private System.Windows.Forms.Label ID_Proveedor;
         private System.Windows.Forms.Label label6;
@@ -502,5 +526,6 @@
         private CustomControls.RJControls.RJComboBox CmbDiaVisita;
         private CustomControls.RJControls.RJComboBox CmbDiaEntrega;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.DataGridView Dgv_Proveedores;
     }
 }

@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Dgv_Productos = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Nud_Existencia = new System.Windows.Forms.NumericUpDown();
             this.Elegir = new System.Windows.Forms.GroupBox();
             this.Tabla = new System.Windows.Forms.RadioButton();
@@ -38,25 +40,11 @@
             this.Btn_Ag = new CustomControls.RJControls.RJButton();
             this.Btn_Cancelar = new CustomControls.RJControls.RJButton();
             this.Btn_Mod = new CustomControls.RJControls.RJButton();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Productos)).BeginInit();
+            this.Dgv_Productos = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.Nud_Existencia)).BeginInit();
             this.Elegir.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Productos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Dgv_Productos
-            // 
-            this.Dgv_Productos.AllowUserToAddRows = false;
-            this.Dgv_Productos.AllowUserToDeleteRows = false;
-            this.Dgv_Productos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Dgv_Productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_Productos.Location = new System.Drawing.Point(12, 274);
-            this.Dgv_Productos.Name = "Dgv_Productos";
-            this.Dgv_Productos.RowHeadersWidth = 62;
-            this.Dgv_Productos.RowTemplate.Height = 28;
-            this.Dgv_Productos.Size = new System.Drawing.Size(1878, 582);
-            this.Dgv_Productos.TabIndex = 13;
-            this.Dgv_Productos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Productos_CellClick);
             // 
             // Nud_Existencia
             // 
@@ -200,12 +188,53 @@
             this.Btn_Mod.UseVisualStyleBackColor = false;
             this.Btn_Mod.Click += new System.EventHandler(this.Btn_Mod_Click);
             // 
+            // Dgv_Productos
+            // 
+            this.Dgv_Productos.AllowUserToAddRows = false;
+            this.Dgv_Productos.AllowUserToDeleteRows = false;
+            this.Dgv_Productos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Dgv_Productos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Dgv_Productos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_Productos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.Dgv_Productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Productos.EnableHeadersVisualStyles = false;
+            this.Dgv_Productos.Location = new System.Drawing.Point(12, 287);
+            this.Dgv_Productos.Name = "Dgv_Productos";
+            this.Dgv_Productos.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_Productos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Dgv_Productos.RowHeadersWidth = 62;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.Dgv_Productos.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.Dgv_Productos.RowTemplate.Height = 28;
+            this.Dgv_Productos.Size = new System.Drawing.Size(1878, 569);
+            this.Dgv_Productos.TabIndex = 112;
+            this.Dgv_Productos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Productos_CellClick);
+            // 
             // Interfaz_Almacen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1902, 868);
+            this.Controls.Add(this.Dgv_Productos);
             this.Controls.Add(this.Btn_Buscar);
             this.Controls.Add(this.Txt_Buscar);
             this.Controls.Add(this.Elegir);
@@ -213,21 +242,18 @@
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_Mod);
             this.Controls.Add(this.Nud_Existencia);
-            this.Controls.Add(this.Dgv_Productos);
             this.Name = "Interfaz_Almacen";
             this.Text = "Interfaz_Almacen";
             this.Load += new System.EventHandler(this.Interfaz_Almacen_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Productos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nud_Existencia)).EndInit();
             this.Elegir.ResumeLayout(false);
             this.Elegir.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Productos)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView Dgv_Productos;
         private System.Windows.Forms.NumericUpDown Nud_Existencia;
         private CustomControls.RJControls.RJButton Btn_Mod;
         private CustomControls.RJControls.RJButton Btn_Cancelar;
@@ -237,5 +263,6 @@
         private System.Windows.Forms.RadioButton Maquina;
         private CustomControls.RJControls.RJTextBox Txt_Buscar;
         private CustomControls.RJControls.RJButton Btn_Buscar;
+        private System.Windows.Forms.DataGridView Dgv_Productos;
     }
 }
