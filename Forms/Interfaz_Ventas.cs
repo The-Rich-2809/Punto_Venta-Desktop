@@ -248,25 +248,54 @@ namespace Entrega_Final
         {
             Ventas Venta = new Ventas();
             Ventas_OPS OPS = new Ventas_OPS();
-            
+            int i = 0;
+
+
             if (Lbl_Total.Text != "0")
             {
                 DialogResult Resultado = MessageBox.Show("¿Desea terminar la venta?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (Resultado == DialogResult.Yes)
                 {
-                            
-                    Venta.User = Usuario;
-                    Venta.CveEmpleado = OPS.Extraer_Empleado(Venta);
-                    Venta.IdVentas = OPS.generaIdVenta();
-                    Venta.Importe = Convert.ToInt32(Lbl_Total.Text);
-                    Venta.Fecha = DateTime.Now.ToString("yyyy") + "/" + DateTime.Now.ToString("MM") + "/" + DateTime.Now.ToString("dd");
-                    OPS.New_Venta(Venta);
-                    Resultado = MessageBox.Show("¿Desea Ticket?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                    if (Resultado == DialogResult.Yes)
+                    for (i = 0; i < Dgv_Producto.RowCount; i++)
                     {
-                        IPDF(Convert.ToString(Venta.IdVentas),Usuario);
+                        string id = Dgv_Producto.Rows[i].Cells[0].Value.ToString();
+                        int Ex_Inicial = Convert.ToInt32(OPS.Extraer_Catidad(id));
+                        int Ex_Comprada = Convert.ToInt32(Dgv_Producto.Rows[i].Cells[5].Value.ToString());
+                        int Ex_Final = Ex_Inicial - Ex_Comprada;
+                        if (Ex_Final < 0)
+                        {
+                            string producto = Dgv_Producto.Rows[i].Cells[2].Value.ToString();
+                            MessageBox.Show("Lo sentimos, no contamos con las cantidades solicitadas del producto "+producto+"\nSolo tenemos disponibles "+Ex_Inicial+" piezas disponibles");
+                            i = Dgv_Producto.RowCount + 1;
+                        }
                     }
-                    CanVenta();
+
+                    if (i == Dgv_Producto.RowCount)
+                    {
+                        for (i = 0; i < Dgv_Producto.RowCount; i++)
+                        {
+                            string id = Dgv_Producto.Rows[i].Cells[0].Value.ToString();
+                            int Ex_Inicial = Convert.ToInt32(OPS.Extraer_Catidad(id));
+                            int Ex_Comprada = Convert.ToInt32(Dgv_Producto.Rows[i].Cells[5].Value.ToString());
+                            int Ex_Final = Ex_Inicial - Ex_Comprada;
+                            string ex_F = Convert.ToString(Ex_Final);
+                            OPS.Mod_Ex_PRO(ex_F, id);
+                        }
+
+                        Venta.User = Usuario;
+                        Venta.CveEmpleado = OPS.Extraer_Empleado(Venta);
+                        Venta.IdVentas = OPS.generaIdVenta();
+                        Venta.Importe = Convert.ToInt32(Lbl_Total.Text);
+                        Venta.Fecha = DateTime.Now.ToString("yyyy") + "/" + DateTime.Now.ToString("MM") + "/" + DateTime.Now.ToString("dd");
+                        OPS.New_Venta(Venta);
+                        Resultado = MessageBox.Show("¿Desea Ticket?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if (Resultado == DialogResult.Yes)
+                        {
+                            IPDF(Convert.ToString(Venta.IdVentas), Usuario);
+                        }
+
+                        CanVenta();
+                    }
                 }
             }
             else

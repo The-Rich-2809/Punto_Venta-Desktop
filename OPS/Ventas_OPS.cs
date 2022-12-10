@@ -196,6 +196,36 @@ namespace Entrega_Final
             }
             return IdProveedor;
         }
+        public int Extraer_Catidad(string id)
+        {
+            object tmp;
+            int IdProveedor = 0;
+            using (SqlConnection conexion = Conexion.Conectar())
+            {
+                SqlCommand cmdCreate;
+                string sentencia = "select EXISTENCIA from PRODUCTO where IdPRODUCTO = @User";
+                try
+                {
+                    cmdCreate = new SqlCommand(sentencia, conexion);
+                    cmdCreate.Parameters.AddWithValue("@User", id);
+                    conexion.Open();
+                    tmp = cmdCreate.ExecuteScalar();
+                    if (tmp.Equals(DBNull.Value))
+                    {
+                        IdProveedor = 0;
+                    }
+                    else
+                    {
+                        IdProveedor = Convert.ToInt32(tmp);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            return IdProveedor;
+        }
         public DataTable Mostrar_Proveedores(Ventas Venta)
         {
             DataTable tablaProveedores = new DataTable();
@@ -222,6 +252,36 @@ namespace Entrega_Final
                 return tablaProveedores;
             }
         }
+        public bool Mod_Ex_PRO(string Existencia,string id)
+        {
+            using (SqlConnection conexion = Conexion.Conectar())
+            {
+                SqlCommand cmdCreate;
 
+                int filasafectadas;
+                string sentencia = @"Update PRODUCTO set EXISTENCIA = @Existencia where IdPRODUCTO = @Id";
+                cmdCreate = new SqlCommand(sentencia, conexion);
+
+                cmdCreate.Parameters.AddWithValue("@Existencia", Existencia);
+                cmdCreate.Parameters.AddWithValue("@Id", id);
+
+                try
+                {
+                    conexion.Open();
+                    filasafectadas = cmdCreate.ExecuteNonQuery();
+                    if (filasafectadas > 0)
+                    {
+                        Mensaje = "Cantidad actualizada exitosamente";
+                        return true;
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Mensaje = ex.Message;
+                }
+            }
+            return false;
+        }
     }
 }
