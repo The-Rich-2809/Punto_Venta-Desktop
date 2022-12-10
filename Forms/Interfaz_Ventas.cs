@@ -23,7 +23,7 @@ namespace Entrega_Final
     {
         public string Usuario { get; set; }
         int i = 0;
-        public static readonly String IMAGE = @"C:\\Users\\ricar\\Music\\Nueva carpeta\\Entrega_Final\\Resources\\SantanderJiren.png";
+        public static readonly String IMAGE = @"C:\Users\CECyT 13\Downloads\Punto_Venta-Desktop-main\Resources\BriseñoToppo.png";
         public Interfaz_Ventas()
         {
             InitializeComponent();
@@ -265,7 +265,7 @@ namespace Entrega_Final
                         if (Ex_Final < 0)
                         {
                             string producto = Dgv_Producto.Rows[i].Cells[2].Value.ToString();
-                            MessageBox.Show("Lo sentimos, no contamos con las cantidades solicitadas del producto "+producto+"\nSolo tenemos disponibles "+Ex_Inicial+" piezas disponibles");
+                            MessageBox.Show("Lo sentimos, no contamos con las cantidades solicitadas del producto "+producto+"\nSolo tenemos "+Ex_Inicial+" piezas disponibles");
                             i = Dgv_Producto.RowCount + 1;
                         }
                     }

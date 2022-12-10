@@ -53,10 +53,9 @@
             // 
             this.Nud_Pro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Nud_Pro.ForeColor = System.Drawing.Color.White;
-            this.Nud_Pro.Location = new System.Drawing.Point(582, 180);
-            this.Nud_Pro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Nud_Pro.Location = new System.Drawing.Point(388, 117);
             this.Nud_Pro.Name = "Nud_Pro";
-            this.Nud_Pro.Size = new System.Drawing.Size(202, 26);
+            this.Nud_Pro.Size = new System.Drawing.Size(135, 20);
             this.Nud_Pro.TabIndex = 9;
             // 
             // Lbl_Total
@@ -64,10 +63,9 @@
             this.Lbl_Total.AutoSize = true;
             this.Lbl_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Total.ForeColor = System.Drawing.SystemColors.Window;
-            this.Lbl_Total.Location = new System.Drawing.Point(1190, 97);
-            this.Lbl_Total.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Lbl_Total.Location = new System.Drawing.Point(698, 84);
             this.Lbl_Total.Name = "Lbl_Total";
-            this.Lbl_Total.Size = new System.Drawing.Size(58, 64);
+            this.Lbl_Total.Size = new System.Drawing.Size(39, 42);
             this.Lbl_Total.TabIndex = 10;
             this.Lbl_Total.Text = "0";
             // 
@@ -76,20 +74,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(1142, 97);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(653, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 64);
+            this.label1.Size = new System.Drawing.Size(39, 42);
             this.label1.TabIndex = 14;
             this.label1.Text = "$";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Entrega_Final.Properties.Resources.pixil_frame_0;
-            this.pictureBox1.Location = new System.Drawing.Point(1257, 54);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(897, 31);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 163);
+            this.pictureBox1.Size = new System.Drawing.Size(119, 106);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -104,10 +100,9 @@
             this.Btn_Can_Venta.FlatAppearance.BorderSize = 0;
             this.Btn_Can_Venta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Can_Venta.ForeColor = System.Drawing.Color.White;
-            this.Btn_Can_Venta.Location = new System.Drawing.Point(794, 171);
-            this.Btn_Can_Venta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Can_Venta.Location = new System.Drawing.Point(529, 111);
             this.Btn_Can_Venta.Name = "Btn_Can_Venta";
-            this.Btn_Can_Venta.Size = new System.Drawing.Size(142, 49);
+            this.Btn_Can_Venta.Size = new System.Drawing.Size(95, 32);
             this.Btn_Can_Venta.TabIndex = 8;
             this.Btn_Can_Venta.Text = "Cancelar Venta";
             this.Btn_Can_Venta.TextColor = System.Drawing.Color.White;
@@ -124,10 +119,9 @@
             this.Btn_Terminar.FlatAppearance.BorderSize = 0;
             this.Btn_Terminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Terminar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Terminar.Location = new System.Drawing.Point(990, 111);
-            this.Btn_Terminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Terminar.Location = new System.Drawing.Point(660, 35);
             this.Btn_Terminar.Name = "Btn_Terminar";
-            this.Btn_Terminar.Size = new System.Drawing.Size(142, 49);
+            this.Btn_Terminar.Size = new System.Drawing.Size(95, 32);
             this.Btn_Terminar.TabIndex = 7;
             this.Btn_Terminar.Text = "Terminar Venta";
             this.Btn_Terminar.TextColor = System.Drawing.Color.White;
@@ -144,10 +138,9 @@
             this.Btn_Cancelar.FlatAppearance.BorderSize = 0;
             this.Btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Cancelar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Cancelar.Location = new System.Drawing.Point(794, 112);
-            this.Btn_Cancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(529, 73);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(142, 49);
+            this.Btn_Cancelar.Size = new System.Drawing.Size(95, 32);
             this.Btn_Cancelar.TabIndex = 6;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.TextColor = System.Drawing.Color.White;
@@ -164,10 +157,9 @@
             this.Btn_Eliminar.FlatAppearance.BorderSize = 0;
             this.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Eliminar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Eliminar.Location = new System.Drawing.Point(794, 54);
-            this.Btn_Eliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Eliminar.Location = new System.Drawing.Point(529, 35);
             this.Btn_Eliminar.Name = "Btn_Eliminar";
-            this.Btn_Eliminar.Size = new System.Drawing.Size(142, 49);
+            this.Btn_Eliminar.Size = new System.Drawing.Size(95, 32);
             this.Btn_Eliminar.TabIndex = 5;
             this.Btn_Eliminar.Text = "Eliminar";
             this.Btn_Eliminar.TextColor = System.Drawing.Color.White;
@@ -184,10 +176,9 @@
             this.Btn_Modificar.FlatAppearance.BorderSize = 0;
             this.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Modificar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Modificar.Location = new System.Drawing.Point(582, 54);
-            this.Btn_Modificar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Modificar.Location = new System.Drawing.Point(388, 35);
             this.Btn_Modificar.Name = "Btn_Modificar";
-            this.Btn_Modificar.Size = new System.Drawing.Size(202, 49);
+            this.Btn_Modificar.Size = new System.Drawing.Size(135, 32);
             this.Btn_Modificar.TabIndex = 4;
             this.Btn_Modificar.Text = "Modificar";
             this.Btn_Modificar.TextColor = System.Drawing.Color.White;
@@ -204,10 +195,9 @@
             this.Btn_Modificar_Pro.FlatAppearance.BorderSize = 0;
             this.Btn_Modificar_Pro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Modificar_Pro.ForeColor = System.Drawing.Color.White;
-            this.Btn_Modificar_Pro.Location = new System.Drawing.Point(582, 112);
-            this.Btn_Modificar_Pro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Modificar_Pro.Location = new System.Drawing.Point(388, 73);
             this.Btn_Modificar_Pro.Name = "Btn_Modificar_Pro";
-            this.Btn_Modificar_Pro.Size = new System.Drawing.Size(202, 49);
+            this.Btn_Modificar_Pro.Size = new System.Drawing.Size(135, 32);
             this.Btn_Modificar_Pro.TabIndex = 3;
             this.Btn_Modificar_Pro.Text = "Modificar Cantidad";
             this.Btn_Modificar_Pro.TextColor = System.Drawing.Color.White;
@@ -224,10 +214,9 @@
             this.Btn_Buscar.FlatAppearance.BorderSize = 0;
             this.Btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Buscar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Buscar.Location = new System.Drawing.Point(400, 112);
-            this.Btn_Buscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Buscar.Location = new System.Drawing.Point(267, 73);
             this.Btn_Buscar.Name = "Btn_Buscar";
-            this.Btn_Buscar.Size = new System.Drawing.Size(118, 48);
+            this.Btn_Buscar.Size = new System.Drawing.Size(79, 31);
             this.Btn_Buscar.TabIndex = 2;
             this.Btn_Buscar.Text = "Buscar";
             this.Btn_Buscar.TextColor = System.Drawing.Color.White;
@@ -243,15 +232,15 @@
             this.Code_Pro.BorderSize = 2;
             this.Code_Pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Code_Pro.ForeColor = System.Drawing.Color.White;
-            this.Code_Pro.Location = new System.Drawing.Point(128, 114);
-            this.Code_Pro.Margin = new System.Windows.Forms.Padding(6);
+            this.Code_Pro.Location = new System.Drawing.Point(85, 74);
+            this.Code_Pro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Code_Pro.Multiline = false;
             this.Code_Pro.Name = "Code_Pro";
-            this.Code_Pro.Padding = new System.Windows.Forms.Padding(15, 11, 15, 11);
+            this.Code_Pro.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.Code_Pro.PasswordChar = false;
             this.Code_Pro.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.Code_Pro.PlaceholderText = "";
-            this.Code_Pro.Size = new System.Drawing.Size(262, 47);
+            this.Code_Pro.Size = new System.Drawing.Size(175, 31);
             this.Code_Pro.TabIndex = 0;
             this.Code_Pro.UnderlinedStyle = true;
             // 
@@ -273,7 +262,8 @@
             this.Dgv_Producto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Dgv_Producto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_Producto.EnableHeadersVisualStyles = false;
-            this.Dgv_Producto.Location = new System.Drawing.Point(12, 225);
+            this.Dgv_Producto.Location = new System.Drawing.Point(8, 146);
+            this.Dgv_Producto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Dgv_Producto.Name = "Dgv_Producto";
             this.Dgv_Producto.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -291,15 +281,15 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.Dgv_Producto.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.Dgv_Producto.RowTemplate.Height = 28;
-            this.Dgv_Producto.Size = new System.Drawing.Size(1512, 538);
+            this.Dgv_Producto.Size = new System.Drawing.Size(1008, 350);
             this.Dgv_Producto.TabIndex = 112;
             // 
             // Interfaz_Ventas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1536, 789);
+            this.ClientSize = new System.Drawing.Size(1024, 513);
             this.Controls.Add(this.Dgv_Producto);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -313,7 +303,6 @@
             this.Controls.Add(this.Btn_Modificar_Pro);
             this.Controls.Add(this.Btn_Buscar);
             this.Controls.Add(this.Code_Pro);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Interfaz_Ventas";
             this.Text = "Interfaz_Ventas";
             this.Load += new System.EventHandler(this.Interfaz_Ventas_Load);

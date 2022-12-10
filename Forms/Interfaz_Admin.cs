@@ -123,6 +123,7 @@ namespace Entrega_Final
         private void Btn_Salir_Click(object sender, EventArgs e)
         {
             ActivarBtn(sender, Colores.color5);
+            Reset();
             this.Close();
         }
 

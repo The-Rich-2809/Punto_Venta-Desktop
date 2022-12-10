@@ -98,7 +98,7 @@ namespace Entrega_Final
             empleados.IdEmpleado = Convert.ToInt32(ID_Empleado.Text);
             empleados.Usuario = Usuario.Text;
             empleados.Contraseña = Contraseña.Text;
-            if(Cb_Nivel_User.Text == "Usuario"){empleados.Nivel_Usuario = "0";} else {empleados.Nivel_Usuario = "1";}
+            empleados.Nivel_Usuario = Cb_Nivel_User.SelectedIndex.ToString();
             empleados.Nombre = Txt_Nombre.Text;
             empleados.PrimerApellido = Txt_1Apellido.Text;
             empleados.SegundoApellido = Txt_2Apellido.Text;

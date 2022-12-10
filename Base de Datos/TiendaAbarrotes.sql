@@ -120,7 +120,7 @@ Insert Into PRODUCTO Values
 ('7501055305629','Coca-Cola','Sprite','Refresco 600ml',15,10,5),
 ('7501055303779','Coca-Cola','Fanta','Refresco 600ml',15,10,5),
 ('7501055339983','Coca-Cola','Mundet Manzana','Refresco 600ml',15,10,5),
-('75004699','Coca-Cola','Coca-Cola','Refresco 500ml',13,10,105),
+('75004699','Coca-Cola','Coca-Cola','Refresco 500ml',13,10,50),
 ('7501030427193','Marinela','Barritas Fresa','Galleta',15,10,5),
 ('7501000112845','Bimbo','Rebanadas Vainilla','Pan',10,10,6),
 ('7501000112784','Bimbo','Nito','Pan',10,10,7),
