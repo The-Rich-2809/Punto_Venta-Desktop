@@ -31,14 +31,23 @@ namespace Entrega_Final.Forms
 
         private void Btn_Mod_Click(object sender, EventArgs e)
         {
+            int CI;
             Almacen almacen = new Almacen();
             Almacen_OPS almacen_OPS = new Almacen_OPS();
-            
-            int RenglonSeleccionado = Dgv_Productos.CurrentRow.Index;
-            almacen.IdP = Dgv_Productos.Rows[RenglonSeleccionado].Cells[0].Value.ToString();
-            int CI = Convert.ToInt32(Dgv_Productos.Rows[RenglonSeleccionado].Cells[6].Value.ToString());
-            almacen.Cantidad = Convert.ToInt32(Nud_Existencia.Text);
 
+            if (Maquina.Checked)
+            {
+                almacen.IdP = Txt_Buscar.Text;
+                CI = almacen_OPS.Extraer_Cantidad(almacen);
+            }
+            else
+            {
+                int RenglonSeleccionado = Dgv_Productos.CurrentRow.Index;
+                almacen.IdP = Dgv_Productos.Rows[RenglonSeleccionado].Cells[0].Value.ToString();
+                CI = Convert.ToInt32(Dgv_Productos.Rows[RenglonSeleccionado].Cells[6].Value.ToString());
+            }
+
+            almacen.Cantidad = Convert.ToInt32(Nud_Existencia.Text);
             DialogResult Resultado = MessageBox.Show("¿Desea pasar de " + CI + " a " + Nud_Existencia.Text + " productos?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (Resultado == DialogResult.Yes)
             {
@@ -49,17 +58,27 @@ namespace Entrega_Final.Forms
                     Cancelar();
                 }
             }
+
         }
         private void Btn_Ag_Click(object sender, EventArgs e)
         {
+            int CI;
             Almacen almacen = new Almacen();
             Almacen_OPS almacen_OPS = new Almacen_OPS();
 
-            int RenglonSeleccionado = Dgv_Productos.CurrentRow.Index;
-            almacen.IdP = Dgv_Productos.Rows[RenglonSeleccionado].Cells[0].Value.ToString();
-            int CI = Convert.ToInt32(Dgv_Productos.Rows[RenglonSeleccionado].Cells[6].Value.ToString());
-            almacen.Cantidad = Convert.ToInt32(Nud_Existencia.Text) + CI;
+            if (Maquina.Checked)
+            {
+                almacen.IdP = Txt_Buscar.Text;
+                CI = almacen_OPS.Extraer_Cantidad(almacen);
+            }
+            else
+            {
+                int RenglonSeleccionado = Dgv_Productos.CurrentRow.Index;
+                almacen.IdP = Dgv_Productos.Rows[RenglonSeleccionado].Cells[0].Value.ToString();
+                CI = Convert.ToInt32(Dgv_Productos.Rows[RenglonSeleccionado].Cells[6].Value.ToString());
+            }
 
+            almacen.Cantidad = Convert.ToInt32(Nud_Existencia.Text) + CI;
             DialogResult Resultado = MessageBox.Show("¿Desea agregar " + Nud_Existencia.Text + " productos más para pasar de " + CI + " a " + almacen.Cantidad + " ?", 
                 "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (Resultado == DialogResult.Yes)
@@ -143,7 +162,6 @@ namespace Entrega_Final.Forms
             {
                 if (Txt_Buscar.Text == Dgv_Productos.Rows[i].Cells[0].Value.ToString())
                 {
-                    MosPro();
                     Nud_Existencia.Text = Dgv_Productos.Rows[i].Cells[6].Value.ToString();
                     i = Dgv_Productos.Rows.Count + 1;              
                     B_Mod();

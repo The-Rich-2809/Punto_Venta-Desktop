@@ -23,7 +23,6 @@ namespace Entrega_Final
     {
         public string Usuario { get; set; }
         int i = 0;
-        public static readonly String IMAGE = @"C:\Users\CECyT 13\Downloads\Punto_Venta-Desktop-main\Resources\BriseñoToppo.png";
         public Interfaz_Ventas()
         {
             InitializeComponent();
@@ -162,6 +161,7 @@ namespace Entrega_Final
             Btn_Buscar.Enabled = j;
             Btn_Modificar_Pro.Enabled = j;
             Btn_Eliminar.Enabled = j;
+            Btn_Terminar.Enabled = j;
 
         }
         public double Sumar(int pro)
@@ -229,7 +229,6 @@ namespace Entrega_Final
                         MiDocumento.Add(TblVenta);
                         MiDocumento.Add(new Paragraph("El total de la compra fue de $ " + Lbl_Total.Text+" MXN"));
                         MiDocumento.Add(new Paragraph("Que tenga excelente dia :V \n Lo antendio " + user));
-                        canvas.AddImageFittedIntoRectangle(ImageDataFactory.Create(IMAGE),pageSize, false);
 
                     }
                     else

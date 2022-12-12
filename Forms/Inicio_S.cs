@@ -17,8 +17,6 @@ namespace Entrega_Final
         {
             InitializeComponent();
         }
-        private Form FormularioSec = null;
-
         private void Iniciar_Click(object sender, EventArgs e)
         {
             Iniciar_Sesion iniciar_Sesion = new Iniciar_Sesion();

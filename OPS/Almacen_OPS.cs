@@ -44,5 +44,35 @@ namespace Entrega_Final.OPS
             }
             return false;
         }
+        public int Extraer_Cantidad(Almacen almacen)
+        {
+            object tmp;
+            int IdProducto = 0;
+            using (SqlConnection conexion = Conexion.Conectar())
+            {
+                SqlCommand cmdCreate;
+                string sentencia = "select EXISTENCIA from PRODUCTO where IdPRODUCTO = @Id";
+                try
+                {
+                    cmdCreate = new SqlCommand(sentencia, conexion);
+                    cmdCreate.Parameters.AddWithValue("@Id", almacen.IdP);
+                    conexion.Open();
+                    tmp = cmdCreate.ExecuteScalar();
+                    if (tmp.Equals(DBNull.Value))
+                    {
+                        IdProducto = 0;
+                    }
+                    else
+                    {
+                        IdProducto = Convert.ToInt32(tmp);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            return IdProducto;
+        }
     }
 }

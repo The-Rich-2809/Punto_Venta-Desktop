@@ -15,7 +15,6 @@ namespace Entrega_Final
 {
     public partial class Interfaz_Productos : Form
     {
-        int respuesta;
         public Interfaz_Productos()
         {
             InitializeComponent();
@@ -151,7 +150,6 @@ namespace Entrega_Final
                         Btn_Agregar.Enabled = false;
                         Btn_Mod.Enabled = false;
                         Btn_Eliminar.Enabled = false;
-                        break;
                         break;
                     }
             }

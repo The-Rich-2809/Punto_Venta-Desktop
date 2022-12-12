@@ -1,10 +1,7 @@
-﻿
-Create DataBase TiendaAbarrotes 
+﻿Create DataBase TiendaAbarrotes 
 Go
-
 Use TiendaAbarrotes 
 Go
-
 Set Nocount on 
 Go
 
